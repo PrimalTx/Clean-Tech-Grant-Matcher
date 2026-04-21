@@ -1,0 +1,1053 @@
+{
+  "AL": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "Alabama Solar Energy Credit",
+      "Alabama Energy Efficiency Rebate",
+      "Alabama Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Huntsville Utility Solar Rebate",
+      "Birmingham Energy Efficiency Program"
+    ],
+    "utilityPrograms": [
+      "Alabama Power Renewable Energy Program",
+      "Tennessee Valley Authority (TVA) Green Power"
+    ],
+    "specialPrograms": []
+  },
+  "AK": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "Alaska Renewable Energy Grant Fund",
+      "Alaska Energy Efficiency Rebate",
+      "Alaska Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Anchorage Municipal Light & Power Rebate",
+      "Fairbanks Renewable Energy Program"
+    ],
+    "utilityPrograms": [
+      "Chugach Electric Association Renewable Programs",
+      "Matanuska Electric Association Solar Incentives"
+    ],
+    "specialPrograms": [
+      "Rural Alaska Community Energy Program"
+    ]
+  },
+  "AZ": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "Arizona Solar Tax Credit",
+      "Arizona Energy Efficiency Incentive",
+      "Arizona Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Phoenix Solar Rebate Program",
+      "Tucson Electric Company Solar Buyback",
+      "APS Solar Rewards Program"
+    ],
+    "utilityPrograms": [
+      "Arizona Public Service (APS) Solar Programs",
+      "Salt River Project (SRP) Solar Incentives",
+      "Tucson Electric Power (TEP) Renewable Programs"
+    ],
+    "specialPrograms": []
+  },
+  "AR": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "Arkansas Energy Efficiency Rebate",
+      "Arkansas Solar Incentive Program",
+      "Arkansas Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Little Rock Energy Efficiency Program",
+      "North Little Rock Solar Rebate"
+    ],
+    "utilityPrograms": [
+      "Entergy Arkansas Energy Efficiency Programs",
+      "Arkansas Electric Cooperative Corporation Renewables"
+    ],
+    "specialPrograms": []
+  },
+  "CA": {
+    "federalCredits": [
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "California Solar Initiative (CSI - Exhausted)",
+      "California Self-Generation Incentive Program (SGIP)",
+      "California Energy Efficiency Tax Credit",
+      "California Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "LA County Solar Rebate",
+      "San Francisco GoSolar Program",
+      "San Diego Solar Incentive",
+      "Bay Area Solar Programs"
+    ],
+    "utilityPrograms": [
+      "PG&E Solar Programs",
+      "SCE Solar Incentives",
+      "SDG&E Net Energy Metering",
+      "LADWP Solar Rebate Program"
+    ],
+    "specialPrograms": [
+      "Low-Income Solar Incentives",
+      "Disadvantaged Communities Solar Program"
+    ]
+  },
+  "CO": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "Colorado Solar Tax Credit",
+      "Colorado Energy Efficiency Rebate",
+      "Colorado Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Denver Solar Rebate",
+      "Boulder Solar Program",
+      "Colorado Springs Utilities Solar Incentives"
+    ],
+    "utilityPrograms": [
+      "Xcel Energy Solar Rewards",
+      "Colorado Energy Office Renewable Programs"
+    ],
+    "specialPrograms": []
+  },
+  "CT": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "Connecticut Solar Incentive Program",
+      "Connecticut Energy Efficiency Fund",
+      "Connecticut Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Hartford Solar Rebate",
+      "New Haven Energy Efficiency Program"
+    ],
+    "utilityPrograms": [
+      "Eversource Connecticut Solar Programs",
+      "United Illuminating Solar Incentives"
+    ],
+    "specialPrograms": []
+  },
+  "DE": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "Delaware Renewable Energy Credit",
+      "Delaware Energy Efficiency Program",
+      "Delaware Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Wilmington Solar Rebate",
+      "Dover Energy Efficiency Incentives"
+    ],
+    "utilityPrograms": [
+      "Delmarva Power Green Energy Program",
+      "Delaware Electric Cooperative Solar Programs"
+    ],
+    "specialPrograms": []
+  },
+  "FL": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "Florida Solar Energy System Incentive",
+      "Florida Energy Efficiency Rebate",
+      "Florida Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Miami-Dade Solar Rebate",
+      "Orlando Solar Program",
+      "Tampa Bay Energy Efficiency Incentives"
+    ],
+    "utilityPrograms": [
+      "FPL SolarNow Program",
+      "Duke Energy Florida Solar Programs",
+      "Tampa Electric Solar Incentives"
+    ],
+    "specialPrograms": []
+  },
+  "GA": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "Georgia Solar Tax Credit",
+      "Georgia Energy Efficiency Rebate",
+      "Georgia Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Atlanta Solar Rebate",
+      "Savannah Energy Efficiency Program"
+    ],
+    "utilityPrograms": [
+      "Georgia Power Solar Buyback",
+      "Georgia EMC Renewable Energy Programs"
+    ],
+    "specialPrograms": []
+  },
+  "HI": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "Hawaii Energy Tax Credit",
+      "Hawaii Solar Incentive Program",
+      "Hawaii Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Honolulu Solar Rebate",
+      "Maui Energy Efficiency Program"
+    ],
+    "utilityPrograms": [
+      "Hawaiian Electric Solar Programs",
+      "Kauai Island Utility Cooperative Solar Incentives"
+    ],
+    "specialPrograms": [
+      "Hawaii Clean Energy Initiative"
+    ]
+  },
+  "ID": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "Idaho Energy Efficiency Rebate",
+      "Idaho Renewable Energy Tax Deduction",
+      "Idaho Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Boise Solar Rebate",
+      "Idaho Falls Energy Program"
+    ],
+    "utilityPrograms": [
+      "Idaho Power Solar Incentives",
+      "Rocky Mountain Power Renewable Programs"
+    ],
+    "specialPrograms": []
+  },
+  "IL": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "Illinois Solar Renewable Energy Credit (SREC)",
+      "Illinois Energy Efficiency Rebate",
+      "Illinois Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Chicago Solar Rebate",
+      "Cook County Energy Efficiency Program"
+    ],
+    "utilityPrograms": [
+      "ComEd Solar Incentives",
+      "Ameren Illinois Renewable Programs"
+    ],
+    "specialPrograms": [
+      "Illinois Climate and Equitable Jobs Act"
+    ]
+  },
+  "IN": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "Indiana Energy Efficiency Rebate",
+      "Indiana Renewable Energy Program",
+      "Indiana Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Indianapolis Solar Rebate",
+      "Fort Wayne Energy Efficiency Program"
+    ],
+    "utilityPrograms": [
+      "Duke Energy Indiana Solar Programs",
+      "AES Indiana Renewable Incentives"
+    ],
+    "specialPrograms": []
+  },
+  "IA": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "Iowa Solar Energy System Tax Credit",
+      "Iowa Energy Efficiency Rebate",
+      "Iowa Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Des Moines Solar Rebate",
+      "Cedar Rapids Energy Program"
+    ],
+    "utilityPrograms": [
+      "MidAmerican Energy Solar Programs",
+      "Alliant Energy Renewable Incentives"
+    ],
+    "specialPrograms": []
+  },
+  "KS": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "Kansas Energy Efficiency Rebate",
+      "Kansas Renewable Energy Incentive",
+      "Kansas Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Wichita Solar Rebate",
+      "Kansas City Energy Program"
+    ],
+    "utilityPrograms": [
+      "Evergy Kansas Solar Programs",
+      "Westar Energy Renewable Incentives"
+    ],
+    "specialPrograms": []
+  },
+  "KY": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "Kentucky Energy Efficiency Rebate",
+      "Kentucky Renewable Energy Program",
+      "Kentucky Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Louisville Solar Rebate",
+      "Lexington Energy Efficiency Program"
+    ],
+    "utilityPrograms": [
+      "LG&E Energy Efficiency Programs",
+      "Kentucky Utilities Solar Incentives"
+    ],
+    "specialPrograms": []
+  },
+  "LA": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "Louisiana Solar Energy System Tax Credit",
+      "Louisiana Energy Efficiency Rebate",
+      "Louisiana Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "New Orleans Solar Rebate",
+      "Baton Rouge Energy Program"
+    ],
+    "utilityPrograms": [
+      "Entergy Louisiana Solar Programs",
+      "Cleco Power Renewable Incentives"
+    ],
+    "specialPrograms": []
+  },
+  "ME": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "Maine Solar Energy Rebate",
+      "Maine Energy Efficiency Program",
+      "Maine Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Portland Solar Rebate",
+      "Bangor Energy Efficiency Program"
+    ],
+    "utilityPrograms": [
+      "Central Maine Power Solar Programs",
+      "Emera Maine Renewable Incentives"
+    ],
+    "specialPrograms": []
+  },
+  "MD": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "Maryland Solar Renewable Energy Credit (SREC)",
+      "Maryland Energy Efficiency Rebate",
+      "Maryland Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Baltimore Solar Rebate",
+      "Montgomery County Energy Program"
+    ],
+    "utilityPrograms": [
+      "BGE Solar Programs",
+      "Pepco Maryland Solar Incentives"
+    ],
+    "specialPrograms": []
+  },
+  "MA": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "Massachusetts Solar Renewable Energy Credit (SREC II)",
+      "Massachusetts Energy Efficiency Rebate",
+      "Massachusetts Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Boston Solar Rebate",
+      "Cambridge Energy Program",
+      "SMART Solar Program"
+    ],
+    "utilityPrograms": [
+      "Eversource Massachusetts Solar Programs",
+      "National Grid Solar Incentives",
+      "Unitil Solar Rebates"
+    ],
+    "specialPrograms": [
+      "Mass Clean Energy Center Programs"
+    ]
+  },
+  "MI": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "Michigan Solar Energy Rebate",
+      "Michigan Energy Efficiency Program",
+      "Michigan Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Detroit Solar Rebate",
+      "Grand Rapids Energy Program"
+    ],
+    "utilityPrograms": [
+      "DTE Energy Solar Programs",
+      "Consumers Energy Solar Incentives"
+    ],
+    "specialPrograms": []
+  },
+  "MN": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "Minnesota Solar Energy Incentive",
+      "Minnesota Energy Efficiency Rebate",
+      "Minnesota Electric Vehicle Rebate (Exhausted)"
+    ],
+    "localIncentives": [
+      "Minneapolis Solar Rebate",
+      "St. Paul Energy Program"
+    ],
+    "utilityPrograms": [
+      "Xcel Energy Minnesota Solar Programs",
+      "Minnesota Power Renewable Incentives"
+    ],
+    "specialPrograms": []
+  },
+  "MS": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "Mississippi Energy Efficiency Rebate",
+      "Mississippi Renewable Energy Program",
+      "Mississippi Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Jackson Solar Rebate",
+      "Gulfport Energy Program"
+    ],
+    "utilityPrograms": [
+      "Mississippi Power Solar Programs",
+      "Entergy Mississippi Renewable Incentives"
+    ],
+    "specialPrograms": []
+  },
+  "MO": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "Missouri Solar Energy Rebate",
+      "Missouri Energy Efficiency Program",
+      "Missouri Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "St. Louis Solar Rebate",
+      "Kansas City Energy Program"
+    ],
+    "utilityPrograms": [
+      "Ameren Missouri Solar Programs",
+      "Kansas City Power & Light Solar Incentives"
+    ],
+    "specialPrograms": []
+  },
+  "MT": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "Montana Renewable Energy Tax Credit",
+      "Montana Energy Efficiency Rebate",
+      "Montana Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Billings Solar Rebate",
+      "Missoula Energy Program"
+    ],
+    "utilityPrograms": [
+      "NorthWestern Energy Solar Programs",
+      "Montana-Dakota Utilities Renewable Incentives"
+    ],
+    "specialPrograms": []
+  },
+  "NE": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "Nebraska Energy Efficiency Rebate",
+      "Nebraska Renewable Energy Program",
+      "Nebraska Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Omaha Solar Rebate",
+      "Lincoln Energy Program"
+    ],
+    "utilityPrograms": [
+      "Nebraska Public Power District Solar Programs",
+      "OPPD Renewable Incentives"
+    ],
+    "specialPrograms": []
+  },
+  "NV": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "Nevada Solar Renewable Energy Credit (SREC)",
+      "Nevada Energy Efficiency Rebate",
+      "Nevada Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Las Vegas Solar Rebate",
+      "Reno Energy Program"
+    ],
+    "utilityPrograms": [
+      "NV Energy Solar Programs",
+      "Valley Electric Association Solar Incentives"
+    ],
+    "specialPrograms": []
+  },
+  "NH": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "New Hampshire Solar Energy Rebate",
+      "New Hampshire Energy Efficiency Program",
+      "New Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Manchester Solar Rebate",
+      "Nashua Energy Program"
+    ],
+    "utilityPrograms": [
+      "Eversource New Hampshire Solar Programs",
+      "Unitil Solar Incentives"
+    ],
+    "specialPrograms": []
+  },
+  "NJ": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "New Jersey Solar Renewable Energy Credit (SREC)",
+      "New Jersey Energy Efficiency Rebate",
+      "New Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Newark Solar Rebate",
+      "Jersey City Energy Program"
+    ],
+    "utilityPrograms": [
+      "PSE&G Solar Programs",
+      "JCP&L Solar Incentives",
+      "Atlantic City Electric Solar Rebates"
+    ],
+    "specialPrograms": [
+      "NJ Clean Energy Program"
+    ]
+  },
+  "NM": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "New Mexico Solar Tax Credit",
+      "New Mexico Energy Efficiency Rebate",
+      "New Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Albuquerque Solar Rebate",
+      "Santa Fe Energy Program"
+    ],
+    "utilityPrograms": [
+      "PNM Solar Programs",
+      "El Paso Electric Solar Incentives"
+    ],
+    "specialPrograms": []
+  },
+  "NY": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "NY-Sun Solar Incentive Program",
+      "NYSERDA Energy Efficiency Rebate",
+      "NY-Sun Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "NYC Solar Rebate",
+      "Buffalo Energy Program",
+      "Suffolk County Solar Incentive"
+    ],
+    "utilityPrograms": [
+      "Con Edison Solar Programs",
+      "National Grid NY Solar Incentives",
+      "Central Hudson Solar Rebates"
+    ],
+    "specialPrograms": [
+      "NYC Climate Mobilization Act"
+    ]
+  },
+  "NC": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "North Carolina Solar Renewable Energy Credit (SREC)",
+      "North Carolina Energy Efficiency Rebate",
+      "North Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Charlotte Solar Rebate",
+      "Raleigh Energy Program"
+    ],
+    "utilityPrograms": [
+      "Duke Energy North Carolina Solar Programs",
+      "NC Renewable Energy Programs"
+    ],
+    "specialPrograms": []
+  },
+  "ND": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "North Dakota Energy Efficiency Rebate",
+      "North Dakota Renewable Energy Program",
+      "North Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Fargo Solar Rebate",
+      "Bismarck Energy Program"
+    ],
+    "utilityPrograms": [
+      "Montana-Dakota Utilities Solar Programs",
+      "Xcel Energy North Dakota Solar Incentives"
+    ],
+    "specialPrograms": []
+  },
+  "OH": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "Ohio Energy Efficiency Rebate",
+      "Ohio Renewable Energy Program",
+      "Ohio Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Columbus Solar Rebate",
+      "Cleveland Energy Program",
+      "Cincinnati Solar Incentive"
+    ],
+    "utilityPrograms": [
+      "AEP Ohio Solar Programs",
+      "FirstEnergy Solar Incentives",
+      "Duke Energy Ohio Solar Programs"
+    ],
+    "specialPrograms": []
+  },
+  "OK": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "Oklahoma Energy Efficiency Rebate",
+      "Oklahoma Renewable Energy Program",
+      "Oklahoma Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Oklahoma City Solar Rebate",
+      "Tulsa Energy Program"
+    ],
+    "utilityPrograms": [
+      "OG&E Solar Programs",
+      "PSO Oklahoma Solar Incentives"
+    ],
+    "specialPrograms": []
+  },
+  "OR": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "Oregon Solar Energy Rebate",
+      "Oregon Energy Efficiency Tax Credit",
+      "Oregon Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Portland Solar Rebate",
+      "Eugene Energy Program",
+      "Salem Solar Incentive"
+    ],
+    "utilityPrograms": [
+      "PGE Solar Programs",
+      "Pacific Power Solar Incentives",
+      "Energy Trust of Oregon"
+    ],
+    "specialPrograms": [
+      "Oregon Clean Energy Fund"
+    ]
+  },
+  "PA": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "Pennsylvania Solar Renewable Energy Credit (SREC)",
+      "Pennsylvania Energy Efficiency Rebate",
+      "Pennsylvania Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Philadelphia Solar Rebate",
+      "Pittsburgh Energy Program"
+    ],
+    "utilityPrograms": [
+      "PECO Solar Programs",
+      "PPL Electric Solar Incentives",
+      "Duquesne Light Solar Rebates"
+    ],
+    "specialPrograms": []
+  },
+  "RI": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "Rhode Island Solar Renewable Energy Credit (SREC)",
+      "Rhode Island Energy Efficiency Rebate",
+      "Rhode Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Providence Solar Rebate",
+      "Warwick Energy Program"
+    ],
+    "utilityPrograms": [
+      "National Grid Rhode Island Solar Programs",
+      "Rhode Island Energy Efficiency Programs"
+    ],
+    "specialPrograms": []
+  },
+  "SC": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "South Carolina Solar Energy Tax Credit",
+      "South Carolina Energy Efficiency Rebate",
+      "South Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Charleston Solar Rebate",
+      "Columbia Energy Program"
+    ],
+    "utilityPrograms": [
+      "Duke Energy South Carolina Solar Programs",
+      "SCE&G Solar Incentives"
+    ],
+    "specialPrograms": []
+  },
+  "SD": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "South Dakota Energy Efficiency Rebate",
+      "South Dakota Renewable Energy Program",
+      "South Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Sioux Falls Solar Rebate",
+      "Rapid City Energy Program"
+    ],
+    "utilityPrograms": [
+      "Black Hills Energy Solar Programs",
+      "NorthWestern Energy South Dakota Solar Incentives"
+    ],
+    "specialPrograms": []
+  },
+  "TN": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "Tennessee Energy Efficiency Rebate",
+      "Tennessee Renewable Energy Program",
+      "Tennessee Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Nashville Solar Rebate",
+      "Memphis Energy Program"
+    ],
+    "utilityPrograms": [
+      "TVA Solar Programs",
+      "Memphis Light, Gas and Water Solar Incentives"
+    ],
+    "specialPrograms": []
+  },
+  "TX": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "Texas Solar Renewable Energy Credit (SREC)",
+      "Texas Energy Efficiency Rebate",
+      "Texas Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Austin Solar Rebate",
+      "Houston Energy Program",
+      "Dallas Solar Incentive",
+      "San Antonio CPS Energy Solar Programs"
+    ],
+    "utilityPrograms": [
+      "Oncor Solar Programs",
+      "CenterPoint Energy Solar Incentives",
+      "AEP Texas Solar Rebates",
+      "CPS Energy Solar Programs"
+    ],
+    "specialPrograms": [
+      "Texas PACE Program"
+    ]
+  },
+  "UT": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "Utah Solar Renewable Energy Credit (SREC)",
+      "Utah Energy Efficiency Rebate",
+      "Utah Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Salt Lake City Solar Rebate",
+      "Provo Energy Program"
+    ],
+    "utilityPrograms": [
+      "Rocky Mountain Power Utah Solar Programs",
+      "Utah Municipal Power Association Solar Incentives"
+    ],
+    "specialPrograms": []
+  },
+  "VT": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "Vermont Solar Energy Rebate",
+      "Vermont Energy Efficiency Program",
+      "Vermont Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Burlington Solar Rebate",
+      "Montpelier Energy Program"
+    ],
+    "utilityPrograms": [
+      "Green Mountain Power Solar Programs",
+      "Vermont Electric Cooperative Solar Incentives"
+    ],
+    "specialPrograms": []
+  },
+  "VA": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "Virginia Solar Renewable Energy Credit (SREC)",
+      "Virginia Energy Efficiency Rebate",
+      "Virginia Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Richmond Solar Rebate",
+      "Virginia Beach Energy Program",
+      "Arlington Solar Incentive"
+    ],
+    "utilityPrograms": [
+      "Dominion Energy Solar Programs",
+      "Appalachian Power Solar Incentives",
+      "NOVEC Solar Rebates"
+    ],
+    "specialPrograms": [
+      "Virginia Clean Energy Act"
+    ]
+  },
+  "WA": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "Washington Solar Energy Rebate",
+      "Washington Energy Efficiency Program",
+      "Washington Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Seattle Solar Rebate",
+      "Spokane Energy Program",
+      "Tacoma Solar Incentive"
+    ],
+    "utilityPrograms": [
+      "Puget Sound Energy Solar Programs",
+      "Seattle City Light Solar Incentives",
+      "Snohomish PUD Solar Rebates"
+    ],
+    "specialPrograms": [
+      "Washington State Clean Energy Fund"
+    ]
+  },
+  "WV": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "West Virginia Energy Efficiency Rebate",
+      "West Virginia Renewable Energy Program",
+      "West Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Charleston Solar Rebate",
+      "Huntington Energy Program"
+    ],
+    "utilityPrograms": [
+      "Appalachian Power West Virginia Solar Programs",
+      "FirstEnergy West Virginia Solar Incentives"
+    ],
+    "specialPrograms": []
+  },
+  "WI": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "Wisconsin Solar Energy Rebate",
+      "Wisconsin Energy Efficiency Program",
+      "Wisconsin Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Milwaukee Solar Rebate",
+      "Madison Energy Program"
+    ],
+    "utilityPrograms": [
+      "We Energies Solar Programs",
+      "Alliant Energy Wisconsin Solar Incentives",
+      "Madison Gas and Electric Solar Rebates"
+    ],
+    "specialPrograms": []
+  },
+  "WY": {
+    "federalCredits": [
+      "Federal Solar Investment Tax Credit (ITC)",
+      "Residential Clean Energy Credit"
+    ],
+    "stateCredits": [
+      "Wyoming Energy Efficiency Rebate",
+      "Wyoming Renewable Energy Program",
+      "Wyoming Electric Vehicle Rebate"
+    ],
+    "localIncentives": [
+      "Cheyenne Solar Rebate",
+      "Casper Energy Program"
+    ],
+    "utilityPrograms": [
+      "Rocky Mountain Power Wyoming Solar Programs",
+      "Black Hills Energy Wyoming Solar Incentives"
+    ],
+    "specialPrograms": []
+  }
+}
