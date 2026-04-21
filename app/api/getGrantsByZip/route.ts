@@ -218,28 +218,46 @@ async function fetchRewiringAmericaIncentives(userResponse: any): Promise<GrantD
       console.error('Error fetching utility ID:', error);
     }
 
-    // Build URL with 2026 parameters (matching StateAnomalyReporter.js)
+    // Build URL with 2026 parameters
     // Use strict base URL and absolute URL construction
     const baseUrl = 'https://api.rewiringamerica.org/api/v1';
-    let finalUrl = `${baseUrl}/calculator?owner_status=homeowner&household_income=80000&household_size=1&zip=${zipCode}`;
     
-    // Add 2026 required parameters
-    finalUrl += '&include_beta_states=true';
-    
-    // Add IRS-mirrored items parameter (matching StateAnomalyReporter.js)
-    finalUrl += '&items=rooftop_solar_installation,ducted_heat_pump,ductless_heat_pump,new_electric_vehicle,battery_storage_installation,heat_pump_water_heater,electric_vehicle_charger';
-    
-    // Authority fallback: if utilityId is null, exclude 'utility' from authority_types
-    if (utilityId) {
-      finalUrl += '&authority_types=federal,state,utility';
-      finalUrl += `&utility=${utilityId}`;
-    } else {
-      finalUrl += '&authority_types=federal,state';
-    }
+    // Helper function to build URL with parameters
+    const buildUrl = (income: number, items: string) => {
+      let url = `${baseUrl}/incentives?owner_status=homeowner&household_income=${income}&household_size=1&zip=${zipCode}`;
+      
+      // Add 2026 required parameters
+      url += '&include_beta_states=true';
+      
+      // Add project cost for OBBBA rebate calculation
+      url += '&estimated_cost=15000';
+      
+      // Add tax filing status (2026 requirement)
+      url += '&tax_filing=single';
+      
+      // Broadened items list
+      url += `&items=${items}`;
+      
+      // Use both authority_type and authority_types for compatibility
+      if (utilityId) {
+        url += '&authority_type=federal';
+        url += '&authority_types=federal';
+        url += '&authority_types=state';
+        url += '&authority_types=utility';
+        url += `&utility=${utilityId}`;
+      } else {
+        url += '&authority_type=federal';
+        url += '&authority_types=federal';
+        url += '&authority_types=state';
+      }
+      
+      return url;
+    };
 
-    console.log('Production Fetch URL:', finalUrl);
+    // Initial search with standard income and broadened items
+    let finalUrl = buildUrl(80000, 'rooftop_solar_installation,heat_pump_water_heater');
+    console.log('Production Fetch URL (Standard):', finalUrl);
 
-    // Call Rewiring America Calculator API with 2026 parameters
     let response = await fetch(finalUrl, {
       method: 'GET',
       headers: {
@@ -248,11 +266,16 @@ async function fetchRewiringAmericaIncentives(userResponse: any): Promise<GrantD
       },
     });
 
-    // Fallback to /incentives if /calculator returns 404
-    if (response.status === 404) {
-      console.log('Calculator endpoint returned 404, falling back to /incentives');
-      const fallbackUrl = `${baseUrl}/incentives?owner_status=homeowner&household_income=80000&household_size=2&zip=${zipCode}`;
-      console.log('Production Fallback Fetch URL:', fallbackUrl);
+    let data = await response.json();
+    
+    // Response debugging
+    console.log('RAW API DATA:', JSON.stringify(data));
+    
+    // Fallback search with lower income if 0 results (Rich vs. Poor Test)
+    if (response.ok && (!data.incentives || data.incentives.length === 0)) {
+      console.log('Initial search returned 0 results, trying with lower income ($30,000)');
+      const fallbackUrl = buildUrl(30000, 'rooftop_solar_installation,heat_pump_water_heater');
+      console.log('Production Fallback Fetch URL (Low Income):', fallbackUrl);
       response = await fetch(fallbackUrl, {
         method: 'GET',
         headers: {
@@ -260,6 +283,8 @@ async function fetchRewiringAmericaIncentives(userResponse: any): Promise<GrantD
           'Content-Type': 'application/json',
         },
       });
+      data = await response.json();
+      console.log('RAW API DATA (FALLBACK):', JSON.stringify(data));
     }
 
     if (!response.ok) {
@@ -273,8 +298,6 @@ async function fetchRewiringAmericaIncentives(userResponse: any): Promise<GrantD
       
       return [];
     }
-
-    const data = await response.json();
 
     // Transform Rewiring America data to GrantDB format
     const grants: GrantDB[] = data.incentives.map((incentive: any, index: number) => ({
