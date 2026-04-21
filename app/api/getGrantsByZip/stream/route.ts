@@ -159,10 +159,7 @@ async function fetchRewiringAmericaIncentives(userResponse: any): Promise<GrantD
       // Add 2026 required parameters
       url += '&include_beta_states=true';
       
-      // Add project cost for OBBBA rebate calculation
-      url += '&estimated_cost=15000';
-      
-      // Add tax filing status (2026 requirement)
+      // Add tax filing status (2026 requirement for federal credits)
       url += '&tax_filing=single';
       
       // Broadened items list
@@ -216,6 +213,22 @@ async function fetchRewiringAmericaIncentives(userResponse: any): Promise<GrantD
       data = await response.json();
       console.log('RAW API DATA (FALLBACK):', JSON.stringify(data));
     }
+    
+    // Super fallback: minimal parameters (no items, no utility) if still 0 results
+    if (response.ok && (!data.incentives || data.incentives.length === 0)) {
+      console.log('Low income search returned 0 results, trying super fallback (minimal parameters)');
+      const superFallbackUrl = `${baseUrl}/incentives?owner_status=homeowner&household_income=30000&household_size=1&zip=${zipCode}&include_beta_states=true&tax_filing=single`;
+      console.log('Production Super Fallback Fetch URL:', superFallbackUrl);
+      response = await fetch(superFallbackUrl, {
+        method: 'GET',
+        headers: {
+          'Authorization': `Bearer ${apiKey}`,
+          'Content-Type': 'application/json',
+        },
+      });
+      data = await response.json();
+      console.log('RAW API DATA (SUPER FALLBACK):', JSON.stringify(data));
+    }
 
     if (!response.ok) {
       console.error('Rewiring America API error:', response.status, response.statusText);
@@ -230,7 +243,8 @@ async function fetchRewiringAmericaIncentives(userResponse: any): Promise<GrantD
     }
 
     // Transform Rewiring America data to GrantDB format
-    const grants: GrantDB[] = data.incentives.map((incentive: any, index: number) => ({
+    const incentives = data.incentives || data.data?.incentives || [];
+    const grants: GrantDB[] = incentives.map((incentive: any, index: number) => ({
       id: `ra-${index}`,
       name: incentive.name,
       description: incentive.description || 'Incentive from Rewiring America',
