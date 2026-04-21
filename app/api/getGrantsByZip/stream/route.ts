@@ -119,21 +119,78 @@ async function fetchRewiringAmericaIncentives(userResponse: any): Promise<GrantD
   const projectType = userResponse.step1.projectType;
 
   const apiKey = process.env.REWIRING_AMERICA_KEY;
-  
+
   if (!apiKey) {
     console.error('REWIRING_AMERICA_KEY not set in environment variables');
     return [];
   }
 
   try {
-    // Call Rewiring America Incentives API with correct 2026 endpoint
-    const response = await fetch(`https://api.rewiringamerica.org/api/v1/incentives?owner_status=homeowner&household_income=100000&household_size=2&zip=${zipCode}`, {
+    // Fetch utility ID for this zip code (2026 requirement)
+    let utilityId = null;
+    try {
+      const utilityUrl = `https://api.rewiringamerica.org/api/v1/utilities?zip=${zipCode}`;
+      console.log('Production Utility Fetch URL:', utilityUrl);
+      const utilityResponse = await fetch(utilityUrl, {
+        method: 'GET',
+        headers: {
+          'Authorization': `Bearer ${apiKey}`,
+          'Content-Type': 'application/json',
+        },
+      });
+
+      if (utilityResponse.ok) {
+        const utilityData = await utilityResponse.json();
+        // Extract ID from object-based structure: { "utilities": { "ID_STRING": { ... } } }
+        utilityId = utilityData.utilities ? Object.keys(utilityData.utilities)[0] : null;
+      }
+    } catch (error) {
+      console.error('Error fetching utility ID:', error);
+    }
+
+    // Build URL with 2026 parameters (matching StateAnomalyReporter.js)
+    // Use strict base URL and absolute URL construction
+    const baseUrl = 'https://api.rewiringamerica.org/api/v1';
+    let finalUrl = `${baseUrl}/calculator?owner_status=homeowner&household_income=80000&household_size=1&zip=${zipCode}`;
+    
+    // Add 2026 required parameters
+    finalUrl += '&include_beta_states=true';
+    
+    // Add IRS-mirrored items parameter (matching StateAnomalyReporter.js)
+    finalUrl += '&items=rooftop_solar_installation,ducted_heat_pump,ductless_heat_pump,new_electric_vehicle,battery_storage_installation,heat_pump_water_heater,electric_vehicle_charger';
+    
+    // Authority fallback: if utilityId is null, exclude 'utility' from authority_types
+    if (utilityId) {
+      finalUrl += '&authority_types=federal,state,utility';
+      finalUrl += `&utility=${utilityId}`;
+    } else {
+      finalUrl += '&authority_types=federal,state';
+    }
+
+    console.log('Production Fetch URL:', finalUrl);
+
+    // Call Rewiring America Calculator API with 2026 parameters
+    let response = await fetch(finalUrl, {
       method: 'GET',
       headers: {
         'Authorization': `Bearer ${apiKey}`,
         'Content-Type': 'application/json',
       },
     });
+
+    // Fallback to /incentives if /calculator returns 404
+    if (response.status === 404) {
+      console.log('Calculator endpoint returned 404, falling back to /incentives');
+      const fallbackUrl = `${baseUrl}/incentives?owner_status=homeowner&household_income=80000&household_size=2&zip=${zipCode}`;
+      console.log('Production Fallback Fetch URL:', fallbackUrl);
+      response = await fetch(fallbackUrl, {
+        method: 'GET',
+        headers: {
+          'Authorization': `Bearer ${apiKey}`,
+          'Content-Type': 'application/json',
+        },
+      });
+    }
 
     if (!response.ok) {
       console.error('Rewiring America API error:', response.status, response.statusText);

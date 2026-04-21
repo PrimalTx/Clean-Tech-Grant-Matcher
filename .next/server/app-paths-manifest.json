@@ -1,4 +1,7 @@
 {
-  "/page": "app/page.js",
-  "/results/page": "app/results/page.js"
+  "/results/page": "app/results/page.js",
+  "/wizard/step-2/page": "app/wizard/step-2/page.js",
+  "/wizard/step-4/page": "app/wizard/step-4/page.js",
+  "/wizard/step-3/page": "app/wizard/step-3/page.js",
+  "/wizard/step-5/page": "app/wizard/step-5/page.js"
 }
