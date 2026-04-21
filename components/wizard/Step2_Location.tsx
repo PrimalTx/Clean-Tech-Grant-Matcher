@@ -9,12 +9,16 @@ export function Step2_Location() {
   const [zipCode, setZipCode] = React.useState(userResponse.step2.zipCode);
   const [state, setState] = React.useState(userResponse.step2.state);
   const [county, setCounty] = React.useState(userResponse.step2.county || '');
+  const [householdSize, setHouseholdSize] = React.useState(userResponse.step2.householdSize || 1);
+  const [taxFilingStatus, setTaxFilingStatus] = React.useState(userResponse.step2.taxFilingStatus || 'single');
 
   const handleContinue = () => {
     updateStep2({
       zipCode,
       state,
       county: county || undefined,
+      householdSize,
+      taxFilingStatus,
     });
     nextStep();
   };
@@ -125,6 +129,42 @@ export function Step2_Location() {
             placeholder="County name"
             className="w-full p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent text-slate-900"
           />
+        </div>
+
+        <div>
+          <label className="block text-sm font-medium text-slate-700 mb-2">
+            Household Size *
+          </label>
+          <select
+            value={householdSize}
+            onChange={(e) => setHouseholdSize(Number(e.target.value))}
+            className="w-full p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent text-slate-900"
+          >
+            <option value={1}>1 person</option>
+            <option value={2}>2 people</option>
+            <option value={3}>3 people</option>
+            <option value={4}>4 people</option>
+            <option value={5}>5 people</option>
+            <option value={6}>6 people</option>
+            <option value={7}>7 people</option>
+            <option value={8}>8+ people</option>
+          </select>
+        </div>
+
+        <div>
+          <label className="block text-sm font-medium text-slate-700 mb-2">
+            Tax Filing Status *
+          </label>
+          <select
+            value={taxFilingStatus}
+            onChange={(e) => setTaxFilingStatus(e.target.value as 'single' | 'married_filing_jointly' | 'married_filing_separately' | 'head_of_household')}
+            className="w-full p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent text-slate-900"
+          >
+            <option value="single">Single</option>
+            <option value="married_filing_jointly">Married Filing Jointly</option>
+            <option value="married_filing_separately">Married Filing Separately</option>
+            <option value="head_of_household">Head of Household</option>
+          </select>
         </div>
       </div>
 

@@ -117,6 +117,8 @@ async function fetchRewiringAmericaIncentives(userResponse: any): Promise<GrantD
   const zipCode = userResponse.step2.zipCode;
   const state = userResponse.step2.state;
   const projectType = userResponse.step1.projectType;
+  const householdSize = userResponse.step2.householdSize || 1;
+  const taxFilingStatus = userResponse.step2.taxFilingStatus || 'single';
 
   const apiKey = process.env.REWIRING_AMERICA_KEY;
 
@@ -154,13 +156,13 @@ async function fetchRewiringAmericaIncentives(userResponse: any): Promise<GrantD
     
     // Helper function to build URL with parameters
     const buildUrl = (income: number, items: string) => {
-      let url = `${baseUrl}/incentives?owner_status=homeowner&household_income=${income}&household_size=1&zip=${zipCode}`;
+      let url = `${baseUrl}/incentives?owner_status=homeowner&household_income=${income}&household_size=${householdSize}&zip=${zipCode}`;
       
       // Add 2026 required parameters
       url += '&include_beta_states=true';
       
       // Add tax filing status (2026 requirement for federal credits)
-      url += '&tax_filing=single';
+      url += `&tax_filing=${taxFilingStatus}`;
       
       // Broadened items list
       url += `&items=${items}`;

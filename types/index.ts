@@ -42,6 +42,8 @@ export interface Step2Data {
   zipCode: string;
   state: string;
   county?: string;
+  householdSize?: number;
+  taxFilingStatus?: 'single' | 'married_filing_jointly' | 'married_filing_separately' | 'head_of_household';
 }
 
 /**
